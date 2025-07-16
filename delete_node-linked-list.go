@@ -30,6 +30,7 @@ func DeleteNode(head *Node, targetData int) *Node {
 
     previous := head
     current := head.Next
+// Traversal
     for current != nil {
         if current.Data == targetData {
             previous.Next = current.Next
